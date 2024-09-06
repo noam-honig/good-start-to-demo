@@ -2,20 +2,11 @@ import usePromise from "react-use-promise";
 import { repo } from "remult";
 
 export function Todo() {
-  const [result, error] = usePromise(async () => {
-    return [];
-  }, []);
+  const [result, error] = usePromise(async () => {}, []);
   return (
     <div>
       <main>
-        <div>
-          <ul>
-            {result?.map((x) => (
-              <li></li>
-            ))}
-          </ul>
-        </div>
-
+        <div></div>
         {error && <div>Error: {error.message}</div>}
       </main>
     </div>
