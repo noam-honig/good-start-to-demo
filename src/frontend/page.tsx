@@ -7,7 +7,6 @@ export function Todo() {
   }, []);
   return (
     <div>
-      <h1>Group By</h1>
       <main>
         <div>
           <ul>
